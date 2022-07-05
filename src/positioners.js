@@ -226,8 +226,8 @@ export default {
     var v = orient(el, config.origin);
 
     return compute({
-      x0: el.x,
-      y0: el.y,
+      x0: el.x + el.width,
+      y0: el.y + el.height,
       x1: el.x,
       y1: el.y,
       vx: v.x,
